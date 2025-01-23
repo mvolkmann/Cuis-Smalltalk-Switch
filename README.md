@@ -1,7 +1,7 @@
 # Cuis-Smalltalk-Switch
 
-This package adds the instance methods `switchOn:`
-and `switchOn:otherwise:` to the `Object` class.
+This is a package for Cuis Smalltalk that adds the instance methods
+`switchOn:` and `switchOn:otherwise:` to the `Object` class.
 These are similar to the provided `caseOf:` and `caseOf:otherwise:` methods,
 but differ in that they do not require the keys and values in the
 collection of `Association` objects passed to the methods to be blocks.
@@ -21,4 +21,10 @@ message := command switchOn: {
 } otherwise: 'Unsupported command'.
 
 message print.
+```
+
+To install this package, evaluate the following in a Workspace:
+
+```smalltalk
+Feature require: 'Switch'
 ```
